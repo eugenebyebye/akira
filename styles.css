@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh; /* исправлено */
+  overflow: hidden;
+}
+
+nav{
+  width: 100%;
+  top:0;
+  display: flex;
+  position: fixed;
+  padding: 1em;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+nav div {
+  display: flex;
+  gap: 10em;
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top:60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 11rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* исправлено */
+  z-index: 3;
+  display: flex;
+}
+
+.bar {
+  width: 10vw;
+  height: 100vh; /* исправлено */
+  background: #1a1a1a;
+}
+
+.counter {
+  position: fixed;
+  width: 100%;
+  height: 100vh; /* исправлено */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 4;
+  color: darkgray;
+  padding: 0.4rem 5rem;
+  font-size: 20rem;
+  font-family: 'Anton', sans-serif;
+}
